@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Coffee Shop</title>
+<script>
+	function totalPrice(){
+		var price = document.getElementById("coffee").value;
+		var num=(5*price + 4*price + 3*price + 2*price);
+		var n = num.valueOf()
+		document.getElementById("demo").innerHTML = n
+		
+		}
+   
+	</script>
+</head>
+<body>
+<form id="mySelect" action="">
+	<fieldset>
+		<legend>Buy a Coffee</legend>
+		<label>Coffee:</label>
+		<select id="coffee">
+			<option>iced latte ($5)</option>
+			<option>hot choclate ($4)</option>
+			<option>iced caramel ($4.5)</option>
+			<option>hot coffee ($3)</option>
+		</select><br><br>
+		Quantity:<input type ="number" name="quantity" min="1" max="10" value="0">
+		<input type="Button" name="button" onclick="totalPrice()" value="totalPrice">
+		</form>
+		<p id="demo"></p>
+			</body>
+
+</html>
